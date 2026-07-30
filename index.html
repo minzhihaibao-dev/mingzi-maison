@@ -1,711 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>MINGZI Maison | Luxury Fashion & Leather Goods</title>
-
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:
-"Helvetica Neue",
-Arial,
-sans-serif;
-}
-
-
-body{
-background:#f8f6f1;
-color:#111;
-}
-
-
-/* HEADER */
-
-header{
-
-position:absolute;
-top:0;
-width:100%;
-padding:35px 70px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-z-index:5;
-
-color:white;
-
-}
-
-
-.logo{
-
-font-size:38px;
-letter-spacing:18px;
-font-weight:300;
-
-}
-
-
-nav a{
-
-color:white;
-text-decoration:none;
-
-margin-left:35px;
-
-font-size:13px;
-
-letter-spacing:3px;
-
-}
-
-
-
-/* HERO */
-
-.hero{
-
-height:100vh;
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.45)
-),
-
-url("images/hero.jpg")
-
-center/cover;
-
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-color:white;
-
-}
-
-
-
-.hero h1{
-
-font-size:100px;
-
-font-weight:200;
-
-letter-spacing:35px;
-
-}
-
-
-.hero p{
-
-margin-top:35px;
-
-font-size:18px;
-
-letter-spacing:8px;
-
-}
-
-
-.btn{
-
-display:inline-block;
-
-margin-top:50px;
-
-padding:18px 70px;
-
-border:1px solid white;
-
-color:white;
-
-text-decoration:none;
-
-letter-spacing:4px;
-
-}
-
-
-
-/* SECTION */
-
-
-.section{
-
-padding:120px 80px;
-
-}
-
-
-
-.title{
-
-text-align:center;
-
-font-size:45px;
-
-font-weight:300;
-
-letter-spacing:15px;
-
-margin-bottom:70px;
-
-}
-
-
-
-/* PRODUCTS */
-
-
-.products{
-
-display:grid;
-
-grid-template-columns:
-repeat(3,1fr);
-
-gap:40px;
-
-}
-
-
-
-.card{
-
-background:white;
-
-}
-
-
-
-.card img{
-
-width:100%;
-
-height:500px;
-
-object-fit:cover;
-
-}
-
-
-
-.card h3{
-
-font-size:22px;
-
-font-weight:300;
-
-padding:25px;
-
-letter-spacing:3px;
-
-}
-
-
-.card p{
-
-padding:0 25px;
-
-color:#777;
-
-line-height:1.8;
-
-}
-
-
-.price{
-
-padding:25px;
-
-font-size:20px;
-
-}
-
-
-
-/* STORY */
-
-
-.story{
-
-background:#111;
-
-color:white;
-
-padding:130px 20%;
-
-text-align:center;
-
-}
-
-
-
-.story h2{
-
-font-size:50px;
-
-font-weight:300;
-
-letter-spacing:12px;
-
-}
-
-
-.story p{
-
-margin-top:40px;
-
-line-height:2.5;
-
-color:#ccc;
-
-font-size:18px;
-
-}
-
-
-
-/* PRIVATE */
-
-
-.private{
-
-padding:120px;
-
-text-align:center;
-
-background:#ede8dd;
-
-}
-
-
-
-.private h2{
-
-font-size:45px;
-
-letter-spacing:10px;
-
-font-weight:300;
-
-}
-
-
-
-.form{
-
-margin:50px auto;
-
-max-width:500px;
-
-}
-
-
-
-input,
-textarea{
-
-width:100%;
-
-padding:18px;
-
-margin-bottom:15px;
-
-border:1px solid #ccc;
-
-background:white;
-
-}
-
-
-
-button{
-
-padding:18px 60px;
-
-background:#111;
-
-color:white;
-
-border:none;
-
-letter-spacing:3px;
-
-}
-
-
-
-/* FOOTER */
-
-
-footer{
-
-background:#000;
-
-color:#aaa;
-
-padding:60px;
-
-text-align:center;
-
-letter-spacing:5px;
-
-}
-
-
-
-@media(max-width:900px){
-
-
-header{
-
-padding:25px;
-
-}
-
-
-nav{
-
-display:none;
-
-}
-
-
-.hero h1{
-
-font-size:45px;
-
-letter-spacing:15px;
-
-}
-
-
-
-.section{
-
-padding:60px 20px;
-
-}
-
-
-
-.products{
-
-grid-template-columns:1fr;
-
-}
-
-
-
-.private{
-
-padding:60px 20px;
-
-}
-
-
-}
-
-
-
-</style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINGZI MAISON | Cloud Moon Handbag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f7f5f0;
+            color: #141414;
+            line-height: 1.7;
+        }
+        /* 导航栏 LV风格固定顶部 */
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 28px 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            background-color: rgba(247, 245, 240, 0.92);
+        }
+        .brand-logo {
+            font-size: 26px;
+            letter-spacing: 5px;
+            font-weight: 500;
+        }
+        nav a {
+            margin-left: 42px;
+            text-decoration: none;
+            color: #141414;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.45;
+        }
+        /* 首屏全屏横幅 1.jpg */
+        .hero-banner {
+            width: 100%;
+            height: 100vh;
+            background: url("1.jpg") center / cover no-repeat;
+            display: flex;
+            align-items: flex-end;
+            padding: 80px 80px;
+            margin-top: 86px;
+        }
+        .hero-text {
+            color: #fff;
+            max-width: 520px;
+        }
+        .hero-text h1 {
+            font-size: 54px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            margin-bottom: 16px;
+        }
+        .hero-text p {
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 36px;
+        }
+        .line-btn {
+            border: 1px solid #ffffff;
+            padding: 15px 44px;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 2px;
+            transition: all 0.4s;
+        }
+        .line-btn:hover {
+            background: #fff;
+            color: #141414;
+        }
+        /* 通用区块样式 */
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 120px 60px;
+        }
+        .section-heading {
+            text-align: center;
+            font-size: 32px;
+            letter-spacing: 3px;
+            margin-bottom: 70px;
+            font-weight: 400;
+        }
+        /* 双栏图文布局 */
+        .row-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-bottom: 120px;
+        }
+        .row-two img {
+            width: 100%;
+            display: block;
+        }
+        .text-block h3 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        .text-block p {
+            font-size: 16px;
+            color: #444444;
+        }
+        /* 三栏工艺布局 */
+        .grid-three {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+        }
+        .grid-item img {
+            width: 100%;
+            margin-bottom: 22px;
+        }
+        .grid-item h4 {
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        /* 产品单张大图展示 */
+        .full-img-block {
+            width: 100%;
+            margin: 100px 0;
+        }
+        .full-img-block img {
+            width: 100%;
+            display:block;
+        }
+        /* 页脚 */
+        footer {
+            background-color: #141414;
+            color: #cccccc;
+            padding: 80px 60px;
+            text-align: center;
+        }
+        footer h2 {
+            color:#fff;
+            letter-spacing:4px;
+            margin-bottom:30px;
+            font-weight:400;
+        }
+        footer p {
+            margin:10px 0;
+        }
+        .copyright {
+            margin-top: 50px;
+            font-size:13px;
+            opacity:0.55;
+        }
+        /* 移动端适配 */
+        @media(max-width:820px){
+            header {
+                padding:20px 24px;
+            }
+            .brand-logo {
+                font-size:20px;
+            }
+            nav a {
+                margin-left:12px;
+                font-size:12px;
+            }
+            .hero-banner {
+                padding:40px 24px;
+            }
+            .hero-text h1 {
+                font-size:32px;
+            }
+            .row-two {
+                grid-template-columns: 1fr;
+                gap:40px;
+            }
+            .grid-three {
+                grid-template-columns:1fr;
+            }
+            .container {
+                padding:60px 24px;
+            }
+        }
+    </style>
 </head>
-
-
-
 <body>
-
-
-
-<header>
-
-<div class="logo">
-
-MINGZI
-
-</div>
-
-
-<nav>
-
-<a href="#">COLLECTION</a>
-
-<a href="#">BAGS</a>
-
-<a href="#">APPAREL</a>
-
-<a href="#">CRAFT</a>
-
-<a href="#">CONTACT</a>
-
-</nav>
-
-
-</header>
-
-
-
-
-
-
-<section class="hero">
-
-
-<div>
-
-
-<h1>
-MINGZI
-</h1>
-
-
-<p>
-THE ART OF MODERN ELEGANCE
-</p>
-
-
-<a class="btn">
-DISCOVER COLLECTION
-</a>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="section">
-
-
-<h2 class="title">
-COLLECTION
-</h2>
-
-
-<div class="products">
-
-
-
-<div class="card">
-
-
-<img src="images/bag.jpg">
-
-
-<h3>
-CLOUD MOON BAG
-</h3>
-
-
-<p>
-A timeless expression
-of feminine architecture.
-</p>
-
-
-<div class="price">
-
-$3,999
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<img src="images/apparel.jpg">
-
-
-<h3>
-MINGZI APPAREL
-</h3>
-
-
-<p>
-Contemporary silhouettes
-for modern women.
-</p>
-
-
-<div class="price">
-
-$298
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="card">
-
-
-<img src="images/detail.jpg">
-
-
-<h3>
-CRAFT DETAILS
-</h3>
-
-
-<p>
-Designed with intention.
-Made to be remembered.
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="story">
-
-
-<h2>
-CRAFTSMANSHIP
-</h2>
-
-
-<p>
-
-Every MINGZI creation begins
-with an obsession for detail.
-
-From material selection
-to refined construction,
-
-we create pieces designed
-to exist beyond seasons.
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="private">
-
-
-<h2>
-PRIVATE CLIENT SERVICES
-</h2>
-
-
-<p>
-
-Request a private consultation
-for our exclusive collections.
-
-</p>
-
-
-
-<div class="form">
-
-
-<input placeholder="Name">
-
-
-<input placeholder="Email">
-
-
-<input placeholder="Country">
-
-
-<textarea placeholder="Message"></textarea>
-
-
-<button>
-SUBMIT REQUEST
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<footer>
-
-
-MINGZI MAISON
-
-
-<br><br>
-
-
-Luxury Fashion & Leather Goods
-
-
-<br><br>
-
-
-Privacy Policy · Terms · Shipping
-
-
-</footer>
-
-
-
+    <!--导航栏-->
+    <header>
+        <div class="brand-logo">MINGZI MAISON</div>
+        <nav>
+            <a href="#overview">OVERVIEW</a>
+            <a href="#craft">CRAFTSMANSHIP</a>
+            <a href="#details">SPECIFICATIONS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!--首屏 1.jpg-->
+    <section class="hero-banner">
+        <div class="hero-text">
+            <h1>CLOUD MOON COLLECTION</h1>
+            <p>MINGZI 云朵星月典藏手提包<br>Timeless Luxury Craftsmanship</p>
+            <a href="#overview" class="line-btn">EXPLORE</a>
+        </div>
+    </section>
+
+    <!--产品概述 2.jpg 版型研发 -->
+    <section id="overview" class="container">
+        <div class="row-two">
+            <img src="2.jpg" alt="独家版型研发">
+            <div class="text-block">
+                <h3>Exclusive Pattern Development</h3>
+                <p>Every silhouette undergoes repeated prototype adjustments. We pursue elegant curved lines that fit the body, balancing aesthetic sculptural form and daily practicality, establishing the foundational shape of the Cloud Moon handbag.</p>
+            </div>
+        </div>
+
+        <!--3.jpg 皮料甄选-->
+        <div class="row-two">
+            <div class="text-block">
+                <h3>Premium Leather Selection</h3>
+                <p>Carefully selected high-quality cowhide with soft texture and stable grain. Only qualified leather enters production, ensuring long-term durability and natural texture aging for years of use.</p>
+            </div>
+            <img src="3.jpg" alt="皮料甄选">
+        </div>
+    </section>
+
+    <!--工艺板块 4、5、6 三栏布局-->
+    <section id="craft" class="container">
+        <h2 class="section-heading">ARTISAN CRAFTSMANSHIP</h2>
+        <div class="grid-three">
+            <div class="grid-item">
+                <img src="4.jpg" alt="浮雕压纹工艺">
+                <h4>Emboss Texture Technique</h4>
+            </div>
+            <div class="grid-item">
+                <img src="5.jpg" alt="镀金五金系统">
+                <h4>24K Gold Plated Hardware</h4>
+            </div>
+            <div class="grid-item">
+                <img src="6.jpg" alt="手工缝制油边">
+                <h4>Hand Stitching & Edge Paint</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--结构与内里 7 8-->
+    <section class="container">
+        <div class="row-two">
+            <img src="7.jpg" alt="多重背法实用结构">
+            <div class="text-block">
+                <h3>Multi-Wear Silhouette</h3>
+                <p>Designed with multiple carrying methods: hand carry, shoulder wear, crossbody. Adapt to formal occasions, daily commuting and leisure scenes.</p>
+            </div>
+        </div>
+        <div class="row-two">
+            <div class="text-block">
+                <h3>Interior Layout Design</h3>
+                <p>Reasonable layered inner compartment, independent pocket for small items. Optimize storage logic while maintaining the clean appearance of the handbag.</p>
+            </div>
+            <img src="8.jpg" alt="内里配置">
+        </div>
+    </section>
+
+    <!--包装、养护、定价 9 10 11-->
+    <section class="container">
+        <h2 class="section-heading">COLLECTION COMPLETE SET</h2>
+        <div class="grid-three">
+            <div class="grid-item">
+                <img src="9.jpg" alt="典藏级包装">
+                <h4>Luxury Presentation Package</h4>
+            </div>
+            <div class="grid-item">
+                <img src="10.jpg" alt="皮具养护">
+                <h4>Leather Care Guidance</h4>
+            </div>
+            <div class="grid-item">
+                <img src="11.jpg" alt="正品保真">
+                <h4>Authenticity Guarantee</h4>
+            </div>
+        </div>
+    </section>
+
+    <!--五金细节全屏大图 12.jpg -->
+    <div class="full-img-block">
+        <img src="12.jpg" alt="云朵五金细节特写">
+    </div>
+
+    <!--页脚联系信息-->
+    <footer id="contact">
+        <h2>MINGZI MAISON</h2>
+        <p>For Business Inquiries</p>
+        <p>Official Email: 1125023307@qq.com</p>
+        <p>WeChat: SuperStar-S2024M</p>
+        <div class="copyright">
+            © 2026 MINGZI MAISON. All Rights Reserved.
+        </div>
+    </footer>
 </body>
-
 </html>
